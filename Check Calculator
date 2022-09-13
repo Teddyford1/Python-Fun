@@ -1,0 +1,16 @@
+my_check = 1707
+insurance = 19
+rent = 308
+car_payment = 330
+att = 21.5 
+water = 25
+phone_bill = 99
+first_of_month_bills = rent + insurance + car_payment + att + water + phone_bill
+print("Take out $", first_of_month_bills, "for the first of the month bills.")
+check_after_expenses = my_check - first_of_month_bills
+investment_amount = 0.14 * check_after_expenses
+savings_amount = 0.15 * check_after_expenses
+amount_to_save_invest = investment_amount + savings_amount
+print("Take out $", amount_to_save_invest, "for savings and investing.")
+final_amount = check_after_expenses - amount_to_save_invest
+print("Now you have $", final_amount, "to spend on leisurely things!")
